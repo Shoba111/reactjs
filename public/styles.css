@@ -1,0 +1,115 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#polling-container, #chat-container {
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff; /* White container background */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12); /* Subtle shadow */
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Darker gray for headers */
+}
+
+#poll-options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+    #poll-options li {
+        margin-bottom: 10px;
+    }
+
+    #poll-options input[type="radio"] {
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+#poll-count-1, #poll-count-2, #poll-count-3 {
+    color: #777; /* Lighter gray for poll counts */
+    font-weight: bold;
+}
+
+#vote-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White button text color */
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    #vote-button:hover {
+        background-color: #0069d9; /* Slightly darker blue on hover */
+    }
+
+#chat-messages {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* White chat message background */
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+    .chat-message b {
+        font-weight: bold;
+        color: #333; /* Darker gray for usernames */
+        margin-right: 5px;
+    }
+
+    .chat-message p {
+        color: #777; /* Lighter gray for chat messages */
+    }
+
+#chat-message-input {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border for input field */
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+#send-message-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White button text color */
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    #send-message-button:hover {
+        background-color: #0069d9; /* Slightly darker blue on hover */
+    }
